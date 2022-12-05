@@ -24,7 +24,7 @@ Data Modeling with Postgres
 
 
 ## ETL Pipeline
-### [etl.py](src/etl.py)
+### [etl.py](etl.py)
 ETL pipeline builder
 
 1. `process_data`
@@ -34,14 +34,14 @@ ETL pipeline builder
 3. `process_log_file`
 	* Process log file to insert record into _time_ and _users_ dimensio table and _songplays_ fact table
 
-### [create_tables.py](src/create_tables.py)
+### [create_tables.py](create_tables.py)
 Creating Fact and Dimension table schema
 
 1. `create_database`
 2. `drop_tables`
 3. `create_tables`
 
-### [sql_queries.py](src/sql_queries.py)
+### [sql_queries.py](sql_queries.py)
 Helper SQL query statements for `etl.py` and `create_tables.py`
 
 1. `*_table_drop`
