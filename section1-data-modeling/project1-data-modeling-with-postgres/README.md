@@ -18,6 +18,8 @@ Data Modeling with Postgres
 |____etl.py	                # ETL builder
 |____sql_queries.py		# ETL query helper 
 |____create_tables.py		# database/table 
+|____create_erd.py		# erd 
+|____sparkifydb_erd.png	
 |____dend-p1-lessons-cheat-sheet.pdf
 |____README.md
 ```

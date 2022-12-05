@@ -60,6 +60,83 @@
 - Normalization is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible.
 - Denormalization is trying to increase performance by reducing the number of joins between tables (as joins can be slow). Data integrity will take a bit of a potential hit, as there will be more copies of the data (to reduce JOINS).
 
+#### Fact and Dimension Tables
+- The following [image](dimension-fact-tables.png) shows the relationship between the fact and dimension tables for the example shown in the video. As you can see in the image, the unique primary key for each Dimension table is included in the Fact table.
+- In this example, it helps to think about the Dimension tables providing the following information:
+    - Where the product was bought? (Dim_Store table)
+    - When the product was bought? (Dim_Date table)
+    - What product was bought? (Dim_Product table)
+- The Fact table provides the metric of the business process (here Sales).
+    - How many units of products were bought? (Fact_Sales table)
 
+#### Star Schema
+- Star Schema is the simplest style of data mart schema. The star schema consists of one of more fact tables referencing any number of dimension tables.
+    - Gets its name from the physical model resembling a star shape
+    - A fact table is at its center
+    - Dimension table surrounds the fact table representing the star’s points.
+
+#### Benefits of Star Schema
+- Getting a table into 3NF is a lot of hard work, JOINs can be complex even on simple data
+- Star schema allows for the relaxation of these rules and makes queries easier with simple JOINS
+- Aggregations perform calculations and clustering of our data so that we do not have to do that work in our application. Examples : COUNT, GROUP BY etc
+
+#### Snowflake Schema
+- Star Schema is a special, simplified case of the snowflake schema.
+- Star schema does not allow for one to many relationships while the snowflake schema does.
+- Snowflake schema is more normalized than Star schema but only in 1NF or 2NF
+
+#### Data Definition and Constraints
+- NOT NULL
+- UNIQUE
+- PRIMARY KEY
+
+#### Upsert
+- In RDBMS language, the term upsert refers to the idea of inserting a new row in an existing table, or updating the row if it already exists in the table. The action of updating or inserting has been described as "upsert".
+- The way this is handled in PostgreSQL is by using the INSERT statement in combination with the ON CONFLICT clause.
+- The INSERT statement adds in new rows within the table. The values associated with specific target columns can be added in any order.
+- Let's look at a simple example. We will use a customer address table as an example, which is defined with the following CREATE statement:
+    ```
+    CREATE TABLE IF NOT EXISTS customer_address (
+        customer_id int PRIMARY KEY, 
+        customer_street varchar NOT NULL,
+        customer_city text NOT NULL,
+        customer_state text NOT NULL
+    );
+    ```
+- Let's try to insert data into it by adding a new row:
+    ```
+    INSERT into customer_address (
+    VALUES
+        (432, '758 Main Street', 'Chicago', 'IL'
+    );
+    ```
+- Now let's assume that the customer moved and we need to update the customer's address. However we do not want to add a new customer id. In other words, if there is any conflict on the customer_id, we do not want that to change.
+    This would be a good candidate for using the ON CONFLICT DO NOTHING clause.
+    ```
+    INSERT INTO customer_address (customer_id, customer_street, customer_city, customer_state)
+    VALUES
+    (
+    432, '923 Knox Street', 'Albany', 'NY'
+    ) 
+    ON CONFLICT (customer_id) 
+    DO NOTHING;
+    ```
+- Now, let's imagine we want to add more details in the existing address for an existing customer. This would be a good candidate for using the ON CONFLICT DO UPDATE clause.
+    ```
+    INSERT INTO customer_address (customer_id, customer_street)
+    VALUES
+        (
+        432, '923 Knox Street, Suite 1' 
+    ) 
+    ON CONFLICT (customer_id) 
+    DO UPDATE
+        SET customer_street  = EXCLUDED.customer_street;
+    ```
 
 ## Key Terms
+- What makes a database a relational database and Codd’s 12 rules of relational database design
+- The difference between different types of workloads for databases OLAP and OLTP
+- The process of database normalization and the normal forms.
+- Denormalization and when it should be used.
+- Fact vs dimension tables as a concept and how to apply that to our data modeling
+- How the star and snowflake schemas use the concepts of fact and dimension tables to make getting value out of the data easier.
