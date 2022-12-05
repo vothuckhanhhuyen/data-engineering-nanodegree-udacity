@@ -97,3 +97,7 @@ time
 	- year
 	- weekday
 ```
+
+## References
+1. [fast-load-data-python-postgresql](https://hakibenita.com/fast-load-data-python-postgresql)
+2. [Pandas to PostgreSQL using Psycopg2: Bulk Insert Performance Benchmark](https://naysan.ca/2020/05/09/pandas-to-postgresql-using-psycopg2-bulk-insert-performance-benchmark/)
