@@ -100,3 +100,4 @@ Primary Key, Partition Key, and Clustering Column
 ## References
 - https://cassandra.apache.org/_/quickstart.html
 - https://leimao.github.io/blog/Jupyter-Notebook-On-Docker/
+- [Cassandra Data Types](https://docs.datastax.com/en/archived/cql/3.3/cql/cql_reference/cql_data_types_c.html)
