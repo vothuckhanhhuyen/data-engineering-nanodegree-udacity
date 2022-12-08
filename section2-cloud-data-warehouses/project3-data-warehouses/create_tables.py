@@ -5,9 +5,7 @@ from sql_queries import create_table_queries, drop_table_queries
 
 def drop_tables(cur, conn):
     """
-    Executes all drop table queries.
-    :param cur: database cursor
-    :param conn: database connector
+    Drop all created tables
     """
     for query in drop_table_queries:
         cur.execute(query)
@@ -16,9 +14,7 @@ def drop_tables(cur, conn):
 
 def create_tables(cur, conn):
     """
-    Executes all create table queries.
-    :param cur: database cursor
-    :param conn: database connector
+    Create all tables
     """
     for query in create_table_queries:
         cur.execute(query)

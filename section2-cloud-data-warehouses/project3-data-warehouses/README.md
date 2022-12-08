@@ -43,51 +43,51 @@ SQL query statement collecitons for `create_tables.py` and `etl.py`
 ### Staging tables
 ```
 staging_events
-    event_id        BIGINT IDENTITY(0,1),
+    event_id        BIGINT IDENTITY(0, 1),
     artist          VARCHAR,
     auth            VARCHAR,
-    firstName       VARCHAR,
-    gender          VARCHAR,
-    itemInSession   VARCHAR,
-    lastName        VARCHAR,
-    length          VARCHAR,
-    level           VARCHAR,
-    location        VARCHAR,
+    firstName       VARCHAR(80),
+    gender          CHAR(1),
+    itemInSession   INT,
+    lastName        VARCHAR(80),
+    length          FLOAT,
+    level           VARCHAR(10),
+    location        VARCHAR(500),
     method          VARCHAR,
     page            VARCHAR,
     registration    VARCHAR,
-    sessionId       INTEGER SORTKEY DISTKEY,
+    sessionId       INT SORTKEY DISTKEY,
     song            VARCHAR,
-    status          INTEGER,
+    status          INT,
     ts              BIGINT,
-    userAgent       VARCHAR,
-    userId          INTEGER
+    userAgent       VARCHAR(500),
+    userId          INT
 
 staging_songs
-    num_songs           INTEGER,
-    artist_id           VARCHAR SORTKEY DISTKEY,
-    artist_latitude     VARCHAR,
-    artist_longitude    VARCHAR,
+    num_songs           INT,
+    artist_id           VARCHAR(50) SORTKEY DISTKEY,
+    artist_latitude     FLOAT,
+    artist_longitude    FLOAT,
     artist_location     VARCHAR(500),
-    artist_name         VARCHAR(500),
-    song_id             VARCHAR,
-    title               VARCHAR(500),
-    duration            DECIMAL(9),
-    year                INTEGER
+    artist_name         VARCHAR,
+    song_id             VARCHAR(40),
+    title               VARCHAR,
+    duration            FLOAT,
+    year                INT
 ```
 
 ### Fact table
 ```
 songplays
-    songplay_id     INTEGER IDENTITY(0,1)   NOT NULL SORTKEY,
-    start_time      TIMESTAMP               NOT NULL,
-    user_id         VARCHAR(50)             NOT NULL DISTKEY,
-    level           VARCHAR(10)             NOT NULL,
-    song_id         VARCHAR(40)             NOT NULL,
-    artist_id       VARCHAR(50)             NOT NULL,
-    session_id      VARCHAR(50)             NOT NULL,
-    location        VARCHAR(100)            NULL,
-    user_agent      VARCHAR(255)            NULL
+    songplay_id     INT IDENTITY(0,1) NOT NULL SORTKEY,
+    start_time      TIMESTAMP NOT NULL,
+    user_id         INT NOT NULL DISTKEY,
+    level           VARCHAR(10) NOT NULL,
+    song_id         VARCHAR(40) NOT NULL,
+    artist_id       VARCHAR(50) NOT NULL,
+    session_id      INT NOT NULL,
+    location        VARCHAR(500),
+    user_agent      VARCHAR(500)
 ```
 
 ### Dimension tables

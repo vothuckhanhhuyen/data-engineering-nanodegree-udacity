@@ -5,9 +5,7 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 def load_staging_tables(cur, conn):
     """
-    Executes all copy table queries.
-    :param cur: database cursor
-    :param conn: database connector
+    Loading dataset into stagging tables
     """
     for query in copy_table_queries:
         cur.execute(query)
@@ -16,9 +14,7 @@ def load_staging_tables(cur, conn):
 
 def insert_tables(cur, conn):
     """
-    Executes all  insert table queries.
-    :param cur: database cursor
-    :param conn: database connector
+    Insert data into fact and dimension tables
     """
     for query in insert_table_queries:
         cur.execute(query)
