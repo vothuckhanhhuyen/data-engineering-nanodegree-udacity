@@ -120,18 +120,18 @@ time_table_create = ("""
 
 staging_events_copy = ("""
     COPY staging_events FROM {}
-    credentials 'aws_iam_role={}'
-    format as json {}
+    CREDENTIALS 'aws_iam_role={}'
+    FORMAT AS json {}
     STATUPDATE ON
-    region 'us-west-2';
+    REGION 'us-west-2';
 """).format(LOG_DATA, ARN, LOG_JSONPATH)
 
 staging_songs_copy = ("""
     COPY staging_songs FROM {}
-    credentials 'aws_iam_role={}'
-    format as json 'auto'
+    CREDENTIALS 'aws_iam_role={}'
+    FORMAT AS json 'auto'
     STATUPDATE ON
-    region 'us-west-2';
+    REGION 'us-west-2';
 """).format(SONG_DATA, ARN)
 
 # FINAL TABLES
