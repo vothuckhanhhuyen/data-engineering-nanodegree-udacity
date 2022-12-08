@@ -93,32 +93,32 @@ songplays
 ### Dimension tables
 ```
 users
-    user_id         INTEGER         NOT NULL SORTKEY,
-    first_name      VARCHAR(50)     NULL,
-    last_name       VARCHAR(80)     NULL,
-    gender          VARCHAR(10)     NULL,
-    level           VARCHAR(10)     NULL
+    user_id         INT NOT NULL SORTKEY,
+    first_name      VARCHAR(80),
+    last_name       VARCHAR(80),
+    gender          CHAR(1),
+    level           VARCHAR(10)
 
 songs
-    song_id     VARCHAR(50)     NOT NULL SORTKEY,
-    title       VARCHAR(500)    NOT NULL,
-    artist_id   VARCHAR(50)     NOT NULL,
-    year        INTEGER         NOT NULL,
-    duration    DECIMAL(9)      NOT NULL
+    song_id     VARCHAR(40) NOT NULL SORTKEY,
+    title       VARCHAR NOT NULL,
+    artist_id   VARCHAR(50) NOT NULL,
+    year        INT NOT NULL,
+    duration    FLOAT NOT NULL
 
 artists
-    artist_id   VARCHAR(50)             NOT NULL SORTKEY,
-    name        VARCHAR(500)            NULL,
-    location    VARCHAR(500)            NULL,
-    latitude    DECIMAL(9)              NULL,
-    longitude   DECIMAL(9)              NULL
+    artist_id   VARCHAR(50) NOT NULL SORTKEY,
+    name        VARCHAR,
+    location    VARCHAR(500),
+    latitude    FLOAT,
+    longitude   FLOAT
 
 time
-    start_time  TIMESTAMP   NOT NULL SORTKEY,
-    hour        SMALLINT    NULL,
-    day         SMALLINT    NULL,
-    week        SMALLINT    NULL,
-    month       SMALLINT    NULL,
-    year        SMALLINT    NULL,
-    weekday     SMALLINT    NULL
+    start_time  TIMESTAMP NOT NULL SORTKEY,
+    hour        SMALLINT,
+    day         SMALLINT,
+    week        SMALLINT,
+    month       SMALLINT,
+    year        SMALLINT,
+    weekday     VARCHAR
 ```
