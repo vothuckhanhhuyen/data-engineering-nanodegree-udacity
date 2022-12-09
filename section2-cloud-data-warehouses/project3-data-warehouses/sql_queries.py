@@ -23,7 +23,6 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 
 staging_events_table_create = ("""
     CREATE TABLE IF NOT EXISTS staging_events (
-        event_id        BIGINT IDENTITY(0, 1),
         artist          VARCHAR,
         auth            VARCHAR,
         firstName       VARCHAR(80),
@@ -76,7 +75,7 @@ songplay_table_create = ("""
 
 user_table_create = ("""
     CREATE TABLE IF NOT EXISTS users (
-        user_id         INT NOT NULL SORTKEY,
+        user_id         INT NOT NULL PRIMARY KEY SORTKEY,
         first_name      VARCHAR(80),
         last_name       VARCHAR(80),
         gender          CHAR(1),
@@ -86,7 +85,7 @@ user_table_create = ("""
 
 song_table_create = ("""
     CREATE TABLE IF NOT EXISTS songs (
-        song_id     VARCHAR(40) NOT NULL SORTKEY,
+        song_id     VARCHAR(40) NOT NULL PRIMARY KEY SORTKEY,
         title       VARCHAR NOT NULL,
         artist_id   VARCHAR(50) NOT NULL,
         year        INT NOT NULL,
@@ -96,7 +95,7 @@ song_table_create = ("""
 
 artist_table_create = ("""
     CREATE TABLE IF NOT EXISTS artists (
-        artist_id   VARCHAR(50) NOT NULL SORTKEY,
+        artist_id   VARCHAR(50) NOT NULL PRIMARY KEY SORTKEY,
         name        VARCHAR,
         location    VARCHAR(500),
         latitude    FLOAT,
@@ -106,7 +105,7 @@ artist_table_create = ("""
 
 time_table_create = ("""
     CREATE TABLE IF NOT EXISTS time (
-        start_time  TIMESTAMP NOT NULL SORTKEY,
+        start_time  TIMESTAMP NOT NULL PRIMARY KEY SORTKEY,
         hour        SMALLINT,
         day         SMALLINT,
         week        SMALLINT,
@@ -150,21 +149,19 @@ user_table_insert = ("""
     INSERT INTO users (user_id, first_name, last_name, gender, level)
     SELECT DISTINCT userId, firstName, lastName, gender, level
     FROM staging_events
-    WHERE page = 'NextSong' AND userId IS NOT NULL
+    WHERE page = 'NextSong'
 """)
 
 song_table_insert = ("""
     INSERT INTO songs (song_id, title, artist_id, year, duration)
     SELECT DISTINCT song_id, title, artist_id, year, duration
     FROM staging_songs
-    WHERE song_id IS NOT NULL
 """)
 
 artist_table_insert = ("""
     INSERT INTO artists (artist_id, name, location, latitude, longitude)
     SELECT DISTINCT artist_id, artist_name, artist_location, artist_latitude, artist_longitude
     FROM staging_songs
-    WHERE artist_id IS NOT NULL
 """)
 
 time_table_insert = ("""

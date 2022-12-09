@@ -43,7 +43,6 @@ SQL query statement collecitons for `create_tables.py` and `etl.py`
 ### Staging tables
 ```
 staging_events
-    event_id        BIGINT IDENTITY(0, 1),
     artist          VARCHAR,
     auth            VARCHAR,
     firstName       VARCHAR(80),
