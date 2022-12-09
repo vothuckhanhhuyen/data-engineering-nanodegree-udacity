@@ -78,7 +78,7 @@ staging_songs
 ### Fact table
 ```
 songplays
-    songplay_id     INT IDENTITY(0,1) NOT NULL SORTKEY,
+    songplay_id     INT IDENTITY(0,1) NOT NULL PRIMARY KEY SORTKEY,
     start_time      TIMESTAMP NOT NULL,
     user_id         INT NOT NULL DISTKEY,
     level           VARCHAR(10) NOT NULL,
@@ -92,28 +92,28 @@ songplays
 ### Dimension tables
 ```
 users
-    user_id         INT NOT NULL SORTKEY,
+    user_id         INT NOT NULL PRIMARY KEY SORTKEY,
     first_name      VARCHAR(80),
     last_name       VARCHAR(80),
     gender          CHAR(1),
     level           VARCHAR(10)
 
 songs
-    song_id     VARCHAR(40) NOT NULL SORTKEY,
+    song_id     VARCHAR(40) NOT NULL PRIMARY KEY SORTKEY,
     title       VARCHAR NOT NULL,
     artist_id   VARCHAR(50) NOT NULL,
     year        INT NOT NULL,
     duration    FLOAT NOT NULL
 
 artists
-    artist_id   VARCHAR(50) NOT NULL SORTKEY,
+    artist_id   VARCHAR(50) NOT NULL PRIMARY KEY SORTKEY,
     name        VARCHAR,
     location    VARCHAR(500),
     latitude    FLOAT,
     longitude   FLOAT
 
 time
-    start_time  TIMESTAMP NOT NULL SORTKEY,
+    start_time  TIMESTAMP NOT NULL PRIMARY KEY SORTKEY,
     hour        SMALLINT,
     day         SMALLINT,
     week        SMALLINT,
