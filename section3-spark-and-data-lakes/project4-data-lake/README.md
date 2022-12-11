@@ -6,9 +6,13 @@ This project builds an **ETL pipeline** for a **data lake**. The data resides in
 
 ```
 Spark and Data Lake
-|____etl.py              # ETL builder
+|____data                # Raw dataset
+| |____log-data.zip
+| |____song-data.zip
+|
 |____dl.cfg              # AWS configuration file
-|____test.ipynb          # testing
+|____etl.py              # ETL builder
+|____README.md          
 ```
 
 
