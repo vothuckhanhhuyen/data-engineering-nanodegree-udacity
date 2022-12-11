@@ -31,3 +31,15 @@
 - While Spark doesn't implement MapReduce, you can write Spark programs that behave in a similar way to the map-reduce paradigm. In the next section, you will run through a code example.
 
 ![](mapreduce.png)
+
+#### Spark Clusters in local mode and standalone modes
+
+![](spark-cluster.png)
+
+## Key Terms
+- Beyond Spark for Storing and Processing Big Data
+Keep in mind that Spark is not a data storage system, and there are a number of tools besides Spark that can be used to process and analyze large datasets.
+    - HBase
+    - Cassandra
+    - Impala
+    - Presto

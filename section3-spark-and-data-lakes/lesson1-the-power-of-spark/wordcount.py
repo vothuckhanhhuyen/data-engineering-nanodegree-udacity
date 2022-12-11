@@ -1,6 +1,5 @@
 # %%file is an Ipython magic function that saves the code cell as a file
 
-
 from mrjob.job import MRJob # import the mrjob library
 
 class MRSongCount(MRJob):
