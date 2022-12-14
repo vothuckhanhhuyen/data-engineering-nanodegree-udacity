@@ -1,0 +1,141 @@
+[2022-12-14T06:20:01.093+0000] {processor.py:153} INFO - Started process (PID=44) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:01.106+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:20:01.111+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:01.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:01.232+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:01.223+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:20:01.236+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:01.278+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.227 seconds
+[2022-12-14T06:20:52.451+0000] {processor.py:153} INFO - Started process (PID=133) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:52.470+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:20:52.477+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:52.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:52.608+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:52.555+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:20:52.618+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:20:52.749+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.321 seconds
+[2022-12-14T06:21:23.186+0000] {processor.py:153} INFO - Started process (PID=200) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:23.194+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:21:23.196+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:23.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:23.225+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:23.221+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:21:23.228+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:23.267+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.087 seconds
+[2022-12-14T06:21:53.719+0000] {processor.py:153} INFO - Started process (PID=278) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:53.723+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:21:53.726+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:53.726+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:53.767+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:53.758+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:21:53.773+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:21:53.909+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.208 seconds
+[2022-12-14T06:22:24.563+0000] {processor.py:153} INFO - Started process (PID=341) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:22:24.566+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:22:24.567+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:24.567+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:22:24.609+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:24.598+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:22:24.635+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:22:24.765+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.207 seconds
+[2022-12-14T06:23:14.458+0000] {processor.py:153} INFO - Started process (PID=405) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:23:14.476+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:23:14.486+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:23:14.485+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:23:14.644+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:23:14.560+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:23:14.663+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:23:15.335+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.920 seconds
+[2022-12-14T06:29:03.797+0000] {processor.py:153} INFO - Started process (PID=559) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:29:04.009+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:29:04.389+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:29:04.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:29:05.208+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:29:04.861+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:29:05.670+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:29:08.801+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 6.332 seconds
+[2022-12-14T06:42:20.129+0000] {processor.py:153} INFO - Started process (PID=783) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:46:08.122+0000] {processor.py:153} INFO - Started process (PID=63) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:46:08.164+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:46:08.201+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:08.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:46:08.438+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:08.309+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:46:08.517+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:46:08.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 0.756 seconds
+[2022-12-14T06:51:29.694+0000] {processor.py:153} INFO - Started process (PID=200) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:51:29.823+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T06:51:29.849+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:29.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:51:30.030+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:29.966+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:51:30.035+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T06:51:31.050+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 1.665 seconds
+[2022-12-14T07:34:38.697+0000] {processor.py:153} INFO - Started process (PID=56) to work on /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T07:34:38.722+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise4.py for tasks to queue
+[2022-12-14T07:34:38.760+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:38.760+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T07:34:38.937+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:38.918+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise4.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise4.py", line 7, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'FactsCalculatorOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T07:34:38.966+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise4.py
+[2022-12-14T07:34:39.547+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise4.py took 1.018 seconds

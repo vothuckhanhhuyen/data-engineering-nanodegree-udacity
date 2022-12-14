@@ -1,0 +1,164 @@
+[2022-12-14T06:20:01.745+0000] {processor.py:153} INFO - Started process (PID=47) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:01.761+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:20:01.762+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:01.762+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:02.309+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:02.304+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:20:02.327+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:02.409+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 0.701 seconds
+[2022-12-14T06:20:53.760+0000] {processor.py:153} INFO - Started process (PID=136) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:53.782+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:20:53.788+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:53.787+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:54.684+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:54.662+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:20:54.698+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:20:54.874+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 1.123 seconds
+[2022-12-14T06:21:25.277+0000] {processor.py:153} INFO - Started process (PID=211) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:21:25.279+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:21:25.280+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:25.280+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:21:25.387+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:25.385+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:21:25.388+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:21:25.407+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 0.134 seconds
+[2022-12-14T06:22:02.013+0000] {processor.py:153} INFO - Started process (PID=289) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:02.021+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:22:02.023+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:02.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:02.245+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:02.241+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:22:02.250+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:02.323+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 0.321 seconds
+[2022-12-14T06:22:35.277+0000] {processor.py:153} INFO - Started process (PID=365) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:35.287+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:22:35.297+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:35.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:37.698+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:37.662+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:22:37.721+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:22:37.949+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 2.723 seconds
+[2022-12-14T06:29:42.719+0000] {processor.py:153} INFO - Started process (PID=581) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:29:43.144+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:29:43.338+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:29:43.337+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:30:13.948+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:30:13.947+0000] {timeout.py:68} ERROR - Process timed out, PID: 581
+[2022-12-14T06:30:14.780+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:30:13.978+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 15, in <module>
+    from airflow.contrib.hooks.aws_hook import AwsHook
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 34, in <module>
+    import boto3
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/docs/service.py", line 13, in <module>
+    from botocore.docs.bcdoc.restdoc import DocumentStructure
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 916, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lesson4/exercise1.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.5.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.5.0/best-practices.html#reducing-dag-complexity, PID: 581
+[2022-12-14T06:30:14.948+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:30:16.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 35.591 seconds
+[2022-12-14T06:46:10.715+0000] {processor.py:153} INFO - Started process (PID=68) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:46:10.827+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:46:10.830+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:10.830+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:46:15.170+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:15.161+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:46:15.175+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:46:15.924+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 5.218 seconds
+[2022-12-14T06:51:34.706+0000] {processor.py:153} INFO - Started process (PID=210) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:51:34.780+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T06:51:34.824+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:34.823+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:51:43.634+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:43.374+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T06:51:43.646+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T06:51:45.245+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 10.708 seconds
+[2022-12-14T07:34:42.472+0000] {processor.py:153} INFO - Started process (PID=59) to work on /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T07:34:42.515+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise1.py for tasks to queue
+[2022-12-14T07:34:42.535+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:42.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T07:34:48.556+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:48.493+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise1.py", line 18, in <module>
+    from airflow.operators import (
+ImportError: cannot import name 'HasRowsOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-12-14T07:34:48.568+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise1.py
+[2022-12-14T07:34:49.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise1.py took 6.974 seconds

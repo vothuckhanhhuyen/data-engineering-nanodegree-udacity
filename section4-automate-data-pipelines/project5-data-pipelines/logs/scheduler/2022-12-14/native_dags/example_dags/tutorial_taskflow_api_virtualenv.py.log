@@ -1,0 +1,31 @@
+[2022-12-14T07:39:32.100+0000] {processor.py:153} INFO - Started process (PID=169) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2022-12-14T07:39:32.335+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2022-12-14T07:39:32.352+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:39:32.351+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2022-12-14T07:40:03.385+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:40:02.779+0000] {timeout.py:68} ERROR - Process timed out, PID: 169
+[2022-12-14T07:40:26.261+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:40:03.700+0000] {dagbag.py:343} ERROR - Failed to import: /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py", line 24, in <module>
+    from airflow.decorators import dag, task
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/__init__.py", line 22, in <module>
+    from airflow.decorators.branch_python import branch_task
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/branch_python.py", line 24, in <module>
+    from airflow.operators.python import BranchPythonOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 83, in <module>
+    class PythonOperator(BaseOperator):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 438, in __new__
+    new_cls.__init__ = cls._apply_defaults(new_cls.__init__)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 361, in _apply_defaults
+    func.__globals__["warnings"] = autostacklevel_warn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 345, in __init__
+    self.warnings = __import__("warnings")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.5.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.5.0/best-practices.html#reducing-dag-complexity, PID: 169
+[2022-12-14T07:40:28.142+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py

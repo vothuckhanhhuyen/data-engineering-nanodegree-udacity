@@ -1,0 +1,63 @@
+[2022-12-14T06:20:02.483+0000] {processor.py:153} INFO - Started process (PID=48) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:02.491+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:20:02.493+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:02.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:03.326+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:05.043+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.042+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:lesson2.exercise4
+[2022-12-14T06:20:05.191+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.191+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:lesson2.exercise4
+[2022-12-14T06:20:05.264+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.262+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:lesson2.exercise4
+[2022-12-14T06:20:05.282+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.274+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:20:05.496+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.492+0000] {dag.py:2697} INFO - Creating ORM DAG for lesson2.exercise4
+[2022-12-14T06:20:05.690+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:05.690+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:20:06.174+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 3.704 seconds
+[2022-12-14T06:20:55.589+0000] {processor.py:153} INFO - Started process (PID=137) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:55.603+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:20:55.606+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:55.605+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:56.325+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:20:56.386+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:56.385+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:20:56.438+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:20:56.438+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:20:56.473+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 0.985 seconds
+[2022-12-14T06:21:27.456+0000] {processor.py:153} INFO - Started process (PID=213) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:21:27.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:21:27.460+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:27.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:21:27.585+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:21:27.615+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:27.614+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:21:27.636+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:21:27.636+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:21:27.671+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 0.218 seconds
+[2022-12-14T06:22:02.430+0000] {processor.py:153} INFO - Started process (PID=290) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:02.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:22:02.457+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:02.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:03.727+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:04.278+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:04.278+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:22:04.493+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:04.493+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:22:04.630+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 2.220 seconds
+[2022-12-14T06:22:37.995+0000] {processor.py:153} INFO - Started process (PID=366) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:38.019+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:22:38.023+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:38.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:39.472+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:22:40.017+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:40.017+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:22:40.477+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:22:40.458+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:22:40.843+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 2.920 seconds
+[2022-12-14T06:30:43.628+0000] {processor.py:153} INFO - Started process (PID=601) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:30:44.772+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:30:45.715+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:30:45.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:46:16.441+0000] {processor.py:153} INFO - Started process (PID=69) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:46:16.457+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:46:16.468+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:16.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:46:18.882+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:46:19.073+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:19.072+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:46:19.190+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:46:19.190+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:46:19.317+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 2.921 seconds
+[2022-12-14T06:51:42.375+0000] {processor.py:153} INFO - Started process (PID=219) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:51:42.447+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T06:51:42.520+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:42.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:51:48.759+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T06:51:50.067+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:50.066+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T06:51:50.972+0000] {logging_mixin.py:137} INFO - [2022-12-14T06:51:50.972+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T06:51:53.023+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 11.196 seconds
+[2022-12-14T07:34:48.090+0000] {processor.py:153} INFO - Started process (PID=67) to work on /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T07:34:48.132+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson3/exercise4.py for tasks to queue
+[2022-12-14T07:34:48.159+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:48.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T07:34:56.506+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson2.exercise4']) retrieved from /opt/airflow/dags/lesson3/exercise4.py
+[2022-12-14T07:34:57.088+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:57.087+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-14T07:34:57.731+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:34:57.731+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson2.exercise4 to 2018-01-01T00:00:00+00:00, run_after=2018-02-01T00:00:00+00:00
+[2022-12-14T07:34:58.286+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson3/exercise4.py took 10.356 seconds
