@@ -2252,3 +2252,31 @@ Traceback (most recent call last):
 AttributeError: module 'sql_statements' has no attribute 'LOCATION_TRAFFIC_SQL'
 [2022-12-19T08:31:56.316+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson 2/solution6.py
 [2022-12-19T08:31:56.369+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson 2/solution6.py took 0.222 seconds
+[2022-12-19T08:32:26.612+0000] {processor.py:153} INFO - Started process (PID=2275) to work on /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:26.614+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson 2/solution6.py for tasks to queue
+[2022-12-19T08:32:26.615+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:26.615+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:26.690+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:26.688+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson 2/solution6.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson 2/solution6.py", line 42, in <module>
+    sql=sql_statements.LOCATION_TRAFFIC_SQL
+AttributeError: module 'sql_statements' has no attribute 'LOCATION_TRAFFIC_SQL'
+[2022-12-19T08:32:26.691+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:26.707+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson 2/solution6.py took 0.098 seconds
+[2022-12-19T08:32:57.293+0000] {processor.py:153} INFO - Started process (PID=2352) to work on /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:57.295+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson 2/solution6.py for tasks to queue
+[2022-12-19T08:32:57.298+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:57.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:57.385+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:57.382+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson 2/solution6.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson 2/solution6.py", line 42, in <module>
+    sql=sql_statements.LOCATION_TRAFFIC_SQL
+AttributeError: module 'sql_statements' has no attribute 'LOCATION_TRAFFIC_SQL'
+[2022-12-19T08:32:57.386+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson 2/solution6.py
+[2022-12-19T08:32:57.419+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson 2/solution6.py took 0.128 seconds

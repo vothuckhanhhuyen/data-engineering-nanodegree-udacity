@@ -2308,3 +2308,17 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'airflow.operators.udacity_plugin'
 [2022-12-19T08:32:07.660+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise3.py
 [2022-12-19T08:32:07.677+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise3.py took 0.057 seconds
+[2022-12-19T08:32:37.742+0000] {processor.py:153} INFO - Started process (PID=2333) to work on /opt/airflow/dags/lesson4/exercise3.py
+[2022-12-19T08:32:37.743+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson4/exercise3.py for tasks to queue
+[2022-12-19T08:32:37.744+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:37.744+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson4/exercise3.py
+[2022-12-19T08:32:37.776+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:37.774+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/lesson4/exercise3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/lesson4/exercise3.py", line 13, in <module>
+    from airflow.operators.udacity_plugin import HasRowsOperator
+ModuleNotFoundError: No module named 'airflow.operators.udacity_plugin'
+[2022-12-19T08:32:37.777+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/lesson4/exercise3.py
+[2022-12-19T08:32:37.796+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson4/exercise3.py took 0.060 seconds

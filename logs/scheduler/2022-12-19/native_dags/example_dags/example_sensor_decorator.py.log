@@ -1318,3 +1318,11 @@
 [2022-12-19T08:32:20.170+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:20.170+0000] {dag.py:2676} INFO - Sync 1 DAGs
 [2022-12-19T08:32:20.193+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:20.193+0000] {dag.py:3427} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
 [2022-12-19T08:32:20.208+0000] {processor.py:175} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py took 0.105 seconds
+[2022-12-19T08:32:50.844+0000] {processor.py:153} INFO - Started process (PID=1955) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2022-12-19T08:32:50.847+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2022-12-19T08:32:50.850+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:50.849+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2022-12-19T08:32:50.872+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3524 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-19T08:32:50.882+0000] {processor.py:753} INFO - DAG(s) dict_keys(['example_sensor_decorator']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2022-12-19T08:32:50.919+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:50.919+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T08:32:50.944+0000] {logging_mixin.py:137} INFO - [2022-12-19T08:32:50.944+0000] {dag.py:3427} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2022-12-19T08:32:50.961+0000] {processor.py:175} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sensor_decorator.py took 0.121 seconds
