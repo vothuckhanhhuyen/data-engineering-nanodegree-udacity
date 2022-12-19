@@ -1,3 +1,0 @@
-[2022-12-18T14:02:32.165+0000] {processor.py:153} INFO - Started process (PID=226) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator.py
-[2022-12-18T14:02:32.653+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
-[2022-12-18T14:02:34.911+0000] {logging_mixin.py:137} INFO - [2022-12-18T14:02:34.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator.py
