@@ -75,7 +75,7 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: huyenvtk1
+      POSTGRES_USER: sparkify
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
     volumes:

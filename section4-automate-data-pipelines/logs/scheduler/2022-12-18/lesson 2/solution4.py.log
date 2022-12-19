@@ -1,0 +1,7 @@
+[2022-12-18T13:56:52.838+0000] {processor.py:153} INFO - Started process (PID=63) to work on /opt/airflow/dags/lesson 2/solution4.py
+[2022-12-18T13:56:52.875+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/lesson 2/solution4.py for tasks to queue
+[2022-12-18T13:56:52.878+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:52.878+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lesson 2/solution4.py
+[2022-12-18T13:56:56.905+0000] {processor.py:753} INFO - DAG(s) dict_keys(['lesson1.solution4']) retrieved from /opt/airflow/dags/lesson 2/solution4.py
+[2022-12-18T13:56:57.440+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:57.440+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-18T13:56:57.808+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:57.808+0000] {dag.py:3427} INFO - Setting next_dagrun for lesson1.solution4 to 2022-12-18T13:56:56.641432+00:00, run_after=2022-12-19T13:56:56.641432+00:00
+[2022-12-18T13:56:58.030+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/lesson 2/solution4.py took 5.271 seconds

@@ -1,3 +1,0 @@
-[2022-12-14T07:40:02.674+0000] {processor.py:153} INFO - Started process (PID=181) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_bash_operator.py
-[2022-12-14T07:40:04.408+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
-[2022-12-14T07:40:07.148+0000] {logging_mixin.py:137} INFO - [2022-12-14T07:40:07.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_bash_operator.py

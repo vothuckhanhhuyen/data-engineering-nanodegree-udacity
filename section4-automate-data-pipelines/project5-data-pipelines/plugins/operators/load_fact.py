@@ -9,12 +9,12 @@ class LoadFactOperator(BaseOperator):
     @apply_defaults
     def __init__(self,
                  redshift_conn_id="",
-                 query="",
+                 sql_query="",
                  *args, **kwargs):
 
         super(LoadFactOperator, self).__init__(*args, **kwargs)
         self.redshift_conn_id = redshift_conn_id
-        self.query = query
+        self.sql_query = sql_query
 
     def execute(self, context):
         """
@@ -23,4 +23,4 @@ class LoadFactOperator(BaseOperator):
         self.log.info("Connect to Redshift")
         redshift_hook = PostgresHook(self.redshift_conn_id)
         self.log.info("Run query to insert data into fact table from stagging tables")
-        redshift_hook.run(str(self.query))
+        redshift_hook.run(str(self.sql_query))

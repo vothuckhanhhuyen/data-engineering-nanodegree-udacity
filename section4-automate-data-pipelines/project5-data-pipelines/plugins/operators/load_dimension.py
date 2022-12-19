@@ -9,16 +9,16 @@ class LoadDimensionOperator(BaseOperator):
     @apply_defaults
     def __init__(self,
                  redshift_conn_id="",
-                 query="",
+                 sql_query="",
                  table="",
-                 truncate=False,
+                 mode="append-only",
                  *args, **kwargs):
 
         super(LoadDimensionOperator, self).__init__(*args, **kwargs)
         self.redshift_conn_id = redshift_conn_id
-        self.query = query
+        self.sql_query = sql_query
         self.table = table,
-        self.truncate = truncate
+        self.mode = mode
 
     def execute(self, context):
         """
@@ -26,8 +26,8 @@ class LoadDimensionOperator(BaseOperator):
         """
         self.log.info("Connect to Redshift")
         redshift_hook = PostgresHook(self.redshift_conn_id)
-        if self.truncate:
+        if self.mode == "delete-load":
             self.log.info(f"Run query to truncate dimension table {self.table}")
             redshift_hook.run(f"TRUNCATE TABLE {self.table}")
         self.log.info(f"Run query to insert data into dimension table {self.table}")
-        redshift_hook.run(str(self.query))
+        redshift_hook.run(str(self.sql_query))

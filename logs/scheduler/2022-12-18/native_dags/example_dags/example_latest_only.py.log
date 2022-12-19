@@ -1,0 +1,11 @@
+[2022-12-18T13:56:41.236+0000] {processor.py:153} INFO - Started process (PID=58) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
+[2022-12-18T13:56:41.313+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-12-18T13:56:41.337+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:41.337+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
+[2022-12-18T13:56:41.942+0000] {processor.py:753} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
+[2022-12-18T13:56:42.865+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:42.865+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-18T13:56:43.090+0000] {logging_mixin.py:137} INFO - [2022-12-18T13:56:43.090+0000] {dag.py:3427} INFO - Setting next_dagrun for latest_only to 2022-12-18T09:56:43.090316+00:00, run_after=2022-12-18T13:56:43.090316+00:00
+[2022-12-18T13:56:43.204+0000] {processor.py:175} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py took 2.051 seconds
+[2022-12-18T14:01:03.807+0000] {processor.py:153} INFO - Started process (PID=195) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
+[2022-12-18T14:01:03.819+0000] {processor.py:743} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-12-18T14:01:03.826+0000] {logging_mixin.py:137} INFO - [2022-12-18T14:01:03.826+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
+[2022-12-18T14:01:34.580+0000] {processor.py:753} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_latest_only.py
