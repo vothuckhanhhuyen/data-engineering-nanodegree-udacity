@@ -12,7 +12,8 @@ class StageToRedshiftOperator(BaseOperator):
         FROM '{}'
         ACCESS_KEY_ID '{}'
         SECRET_ACCESS_KEY '{}'
-        {}
+        IGNOREHEADER {}
+        DELIMITER '{}'
     """
 
     @apply_defaults
@@ -22,10 +23,8 @@ class StageToRedshiftOperator(BaseOperator):
                  table="",
                  s3_bucket="",
                  s3_key="",
-                 file_format="json",
-                 json_path="auto",
-                 delimiter=",",
-                 ignore_headers=1,
+                 delimiter="",
+                 ignore_headers="",
                  *args, **kwargs):
 
         super(StageToRedshiftOperator, self).__init__(*args, **kwargs)
@@ -34,8 +33,6 @@ class StageToRedshiftOperator(BaseOperator):
         self.table = table
         self.s3_bucket = s3_bucket
         self.s3_key = s3_key
-        self.file_format = file_format
-        self.json_path = json_path
         self.delimiter = delimiter
         self.ignore_headers = ignore_headers
 
@@ -51,13 +48,6 @@ class StageToRedshiftOperator(BaseOperator):
         self.log.info("Clear data from destination Redshift table")
         redshift_hook.run("DELETE FROM {}".format(self.table))
 
-        self.log.info("Copy data from S3 to Redshift")
-        if self.file_format == "json":
-            file_processing = "JSON '{}'".format(self.json_path)
-        elif self.file_format == "csv":
-            file_processing = "IGNOREHEADER '{}' DELIMITER '{}'"\
-                              .format(self.ignore_header, self.delimiter)
-
         rendered_key = self.s3_key.format(**context)
         s3_path = "s3://{}/{}".format(self.s3_bucket, rendered_key)
         formatted_sql = StageToRedshiftOperator.copy_sql.format(
@@ -65,6 +55,7 @@ class StageToRedshiftOperator(BaseOperator):
             s3_path,
             credentials.access_key,
             credentials.secret_key,
-            file_processing
+            self.ignore_headers,
+            self.delimiter
         )
         redshift_hook.run(formatted_sql)

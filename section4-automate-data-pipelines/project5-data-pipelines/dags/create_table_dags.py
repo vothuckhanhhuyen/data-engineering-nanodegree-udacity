@@ -2,12 +2,10 @@ import datetime
 
 from airflow import DAG
 from airflow.operators.postgres_operator import PostgresOperator
-from sparkify_dag import default_args
 
 
 with DAG('create_tables_dag', 
-         start_date=datetime.datetime.now(),
-         default_args=default_args) as dag:
+         start_date=datetime.datetime.now()) as dag:
     
     PostgresOperator(
         task_id="create_table",
