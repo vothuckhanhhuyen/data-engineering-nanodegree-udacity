@@ -22,15 +22,15 @@ default_args = {
 parent_dag_name = "sparkify_dag"
 dag = DAG(parent_dag_name,
           default_args=default_args,
-          description='Load and transform data in Redshift with Airflow',
+          description="Load and transform data in Redshift with Airflow",
           end_date=datetime(2022, 12, 14),
-          schedule_interval='0 * * * *'
+          schedule_interval="0 * * * *"
           )
 
-start_operator = DummyOperator(task_id='Begin_execution',  dag=dag)
+start_operator = DummyOperator(task_id="Begin_execution",  dag=dag)
 
 stage_events_to_redshift = StageToRedshiftOperator(
-    task_id='Stage_events',
+    task_id="Stage_events",
     dag=dag,
     redshift_conn_id="redshift",
     aws_credentials_id="aws_credentials",
@@ -43,7 +43,7 @@ stage_events_to_redshift = StageToRedshiftOperator(
 )
 
 stage_songs_to_redshift = StageToRedshiftOperator(
-    task_id='Stage_songs',
+    task_id="Stage_songs",
     dag=dag,
     redshift_conn_id="redshift",
     aws_credentials_id="aws_credentials",
@@ -55,7 +55,7 @@ stage_songs_to_redshift = StageToRedshiftOperator(
 )
 
 load_songplays_table = LoadFactOperator(
-    task_id='Load_songplays_fact_table',
+    task_id="Load_songplays_fact_table",
     dag=dag,
     redshift_conn_id="redshift",
     table="songplays",
@@ -99,10 +99,10 @@ load_time_dimension_table = LoadDimensionOperator(
 )
 
 run_quality_checks = DataQualityOperator(
-    task_id='Run_data_quality_checks',
+    task_id="Run_data_quality_checks",
     dag=dag,
     redshift_conn_id="redshift",
-    tables=['songplays', 'users', 'songs', 'artists', 'time']
+    tables=["songplays", "users", "songs", "artists", "time"],
 )
 
 end_operator = DummyOperator(task_id='Stop_execution',  dag=dag)

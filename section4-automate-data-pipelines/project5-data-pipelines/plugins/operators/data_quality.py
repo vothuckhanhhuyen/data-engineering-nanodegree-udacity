@@ -27,10 +27,10 @@ class DataQualityOperator(BaseOperator):
             checks = [
                 {"test_sql": f"SELECT COUNT(*) > 0 as count FROM {table}", "expected_result": True}
             ]
-            for _, check in enumerate(checks):
+            for i, check in enumerate(checks):
                 records = redshift_hook.get_records(check["test_sql"])
                 if not check["expected_result"] == records[0][0]:
                     raise ValueError(
                     f"Data quality check failed. {table} contained 0 rows")
                 self.log.info(
-                f"Data quality on table {table} check passed with {records[0][0]} records")  
+                f"Data quality on table {table} check {i} passed with {records[0][0]} records")  

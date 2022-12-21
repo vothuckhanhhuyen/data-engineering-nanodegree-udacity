@@ -1,3 +1,5 @@
+DROP TABLE public.users;
+
 CREATE TABLE IF NOT EXISTS public.artists (
 	artistid varchar(256) NOT NULL,
 	name varchar(256),
